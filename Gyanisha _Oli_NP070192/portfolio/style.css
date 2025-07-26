@@ -1,0 +1,324 @@
+/* CSS Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navigation */
+header {
+    background: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Hero Section - UPDATED */
+.hero {
+    /* Reduced height and adjusted padding */
+    min-height: 45vh; /* <-- Reduced from 80vh */
+    padding: 4rem 1rem; /* <-- Added padding for content spacing */
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(231, 76, 60, 0.9)), url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Slightly adjusted for smaller section */
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem; /* Slightly adjusted */
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* General Section Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    padding: 4rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+/* About Me Section - UPDATED */
+#about .about-content {
+    /* Aligns content in a column for centering */
+    display: flex;
+    flex-direction: column; /* <-- Stacks image and text vertically */
+    align-items: center;     /* <-- Centers items horizontally */
+    text-align: center;      /* <-- Centers the text itself */
+    gap: 2rem;               /* Adds space between image and text block */
+}
+
+#about img {
+    /* Centered image styles */
+    width: 200px;   /* <-- Adjusted size for a cleaner look */
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #e74c3c;
+    object-fit: cover;
+}
+
+#about .about-text {
+    max-width: 800px; /* Constrains the width of the text for readability */
+}
+
+#about .about-text h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem; /* Adds space above the skills */
+}
+
+.skill-item {
+    background: #e7e7e7;
+    padding: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-links {
+    margin-top: 1rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: 600;
+    margin-right: 1.5rem;
+}
+
+/* Education Section */
+.education-item {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Center education text */
+}
+
+.education-item p {
+    margin: 0;
+}
+
+/* Contact Form */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-align: left; /* Align labels to the left */
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact button {
+    padding: 0.8rem 1.5rem;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background: #e74c3c;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.7rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e74c3c;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        min-height: 40vh; /* Adjust hero height for mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    /* The about content is already column, so no change is needed here */
+    
+    main {
+        padding: 1rem;
+    }
+}

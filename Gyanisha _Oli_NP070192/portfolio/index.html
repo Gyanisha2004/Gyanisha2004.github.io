@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanisha Oli- Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="nav-logo">Gyanisha.</a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Gyanisha Oli</h1>
+                <p>Web Developer & Designer</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                
+                <a href="www.linkedin.com/in/gyanisha-oli-a3b928349/" target="_blank">
+                <img src="hhh.jpg" alt="Gyanisha Oli">
+            </a>
+                <div class="about-text">
+                    <p>Hello! I'm Gyanisha Oli, a dedicated web developer passionate about building modern, responsive, and user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I am always eager to expand my knowledge and learn new technologies.</p>
+                    <h3>My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">HTML5</div>
+                        <div class="skill-item">CSS3</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Responsive Design</div>
+                        <div class="skill-item">UI/UX Principles</div>
+                        <div class="skill-item">Git & GitHub</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <p><strong>Bachelor of Science in Information Technology</strong></p>
+                <p>Techspire College, Kathmandu, Nepal</p>
+                <p><em>Currently Studying</em></p>
+            </div>
+            <div class="education-item">
+                <p><strong>High School</strong></p>
+                <p>Padmodaya Public Model Secondary School Ghorahi-15,Dang</p>
+                <p><em>Graduated: 2022</em></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p><strong>Email:</strong> gyanishaoli18@email.com</p>
+        <p><strong>Phone:</strong> +977-9840009942</p>
+        <p><strong>linkedin:</strong> Gyanisha Oli</p>
+        <p><strong>Location:</strong> Kathmandu, Nepal</p>
+      </div>
+
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-Youtube "></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin "></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2025 Gyanisha Oli . All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
